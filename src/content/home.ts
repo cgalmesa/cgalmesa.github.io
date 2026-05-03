@@ -23,7 +23,7 @@ type HomeContent = {
 export const homeContent: HomeContent = {
   intro: {
     kicker: "Carmen's Astrophysics Portfolio",
-    title: "Welcome to the cosmic desktop.",
+    title: "Welcome to poop fart.",
     description:
       "This site is under construction, but the signal is already coming through: research notes, visual experiments, telescope-side artifacts, and contact coordinates for future collaborations.",
   },
