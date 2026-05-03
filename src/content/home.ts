@@ -45,12 +45,12 @@ export const homeContent: HomeContent = {
       stamp: "Last updated: Stardate 2026.05",
     },
     {
-      title: "Poopy Butt",
+      title: "home 3",
       kind: "text",
       body: "Iter 2 begins here: small, weird, readable, and very much alive. More field notes and project pages can be wired in as the archive grows."
     },
     {
-      title: "Poopy Butt 2",
+      title: "home 4",
       kind: "text",
       body: "Iter 2 begins here: small, weird, readable, and very much alive. More field notes and project pages can be wired in as the archive grows.",
       stamp: "Last updated: Stardate 2026.05"
