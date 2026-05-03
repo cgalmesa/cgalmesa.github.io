@@ -23,9 +23,9 @@ type HomeContent = {
 export const homeContent: HomeContent = {
   intro: {
     kicker: "Carmen's Astrophysics Portfolio",
-    title: "Welcome to poop fart.",
+    title: "Carmen Galmes Altafulla's website.",
     description:
-      "This site is under construction, but the signal is already coming through: research notes, visual experiments, telescope-side artifacts, and contact coordinates for future collaborations.",
+      "This site is under construction, but the signal is already coming through: research notes, artwork, and contact coordinates for future collaborations.",
   },
   sections: [
     {
