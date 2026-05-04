@@ -38,7 +38,7 @@ export const homeContent: HomeContent = {
       title: "Latest Log",
       kind: "text",
       body: "",
-      src: "/images/home/iter2log.webp",
+      src: "/images/icons/aas2026.webp",
       stamp: "Last updated: Stardate 2026.05",
     }
   //   {
