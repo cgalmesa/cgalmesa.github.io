@@ -34,8 +34,8 @@ export const artworkContent = {
     },
     {
       title: "j14071 b Series",
-      description: "Gouache on paper,3 x 6 x 4 inches, 2024",
-      src: "/images/artwork/study-of-saturn's-surface.jpg",
+      description: "Gouache on paper, 3 x 6 x 4 inches, 2024",
+      src: "/images/artwork/j14071b.jpg",
       alt: "j14071 b Series",
     },
     {
