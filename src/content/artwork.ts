@@ -8,23 +8,29 @@ type ArtworkItem = {
 export const artworkContent = {
   intro: {
     kicker: "Artwork",
-    title: "Images, diagrams, and experiments in cosmic texture.",
+    title: ".",
     description:
-      "A future cabinet for science-adjacent artwork: false-color astronomy, handmade diagrams, screen artifacts, and small visual studies.",
+      "A visual Archive of my artwork, inspired by the experiences of growing up on the internet, and how that had an impact on my relationship with the world around me. Pieces also explore the role tof technology and science within our lives and 21st century humans and the aburdity of the universe",
   },
   artworks: [
     {
-      title: "Signal Study I",
+      title: "Earth",
       description:
-        "Color, texture, and cosmic noise arranged like a found broadcast.",
-      src: "/images/artwork/art-1.jpg",
-      alt: "Artwork study one",
+        "Oil on wood panel, 20 x 16 inches, 2026",
+      src: "/images/artwork/earth.jpg",
+      alt: "Earth",
     },
     {
-      title: "Signal Study II",
-      description: "A second visual fragment from the archive of strange light.",
-      src: "/images/artwork/art-2.jpg",
-      alt: "Artwork study two",
+      title: "untitled",
+      description: "acrylic on paper, 18 x 24 inches, 2025",
+      src: "/images/artwork/Google_maps_dog.jpg",
+      alt: "untitled",
+    },
+    {
+      title: "Selected sketchbook pages",
+      description: "gouache on paper, 3 x 4 inches, 2024",
+      src: "/images/artwork/sketchbook-pg.jpg",
+      alt: "Selected sketchbook pages",
     },
   ] satisfies ArtworkItem[],
 } as const;
