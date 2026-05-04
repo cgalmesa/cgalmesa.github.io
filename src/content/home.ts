@@ -8,6 +8,7 @@ type HomeSection =
       title: string;
       kind: "text";
       body: string;
+      src?: string;
       stamp?: string;
     };
 
@@ -36,7 +37,8 @@ export const homeContent: HomeContent = {
     {
       title: "Latest Log",
       kind: "text",
-      body: "/images/home/iter2log.webp",
+      body: ""
+      src: "/images/home/iter2log.webp",
       stamp: "Last updated: Stardate 2026.05",
     }
   //   {
