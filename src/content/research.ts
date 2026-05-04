@@ -34,32 +34,23 @@ export const researchContent: ResearchContent = {
   },
   threads: [
     {
-      id: "strong-lensing",
-      title: "Strong Lensing Candidates",
+      id: "Exoplanet-Demographics",
+      title: "Exoplanet Demographics",
       description:
-        "Finding warped arcs, duplicated sources, and strange alignments where gravity turns massive galaxies into natural telescopes.",
+        "Analyzing the distribution and characteristics of planets orbiting stars beyond our solar system.",
       image: "/images/backgrounds/space-bg.jpg",
       imageAlt:
         "A dense star field used as a placeholder for lensing research.",
       imagePlacement: "left",
     },
     {
-      id: "galaxy-morphology",
-      title: "Galaxy Morphology Notes",
+      id: "binary-microlensing",
+      title: "Binary Microlensing",
       description:
-        "Comparing structure, color, and environment to ask how galaxies assemble, collide, fade, and flare across cosmic time.",
+        "Investigating the gravitational effects of binary star systems on light curves and how they may appear in future Roman Space Telescope data",
       image: "/images/research/globe.svg",
       imageAlt: "A simple globe icon used as a placeholder for galaxy morphology.",
       imagePlacement: "right",
-    },
-    {
-      id: "redshift-toolkit",
-      title: "Spectral Redshift Toolkit",
-      description:
-        "Working notes for identifying lines, checking filters, and turning faint spectral fingerprints into distance estimates.",
-      image: "/images/research/window.svg",
-      imageAlt: "A simple window icon used as a placeholder for redshift tools.",
-      imagePlacement: "left",
     },
   ],
 };
