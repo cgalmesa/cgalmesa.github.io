@@ -8,16 +8,16 @@ type ArtworkItem = {
 export const artworkContent = {
   intro: {
     kicker: "Artwork",
-    title: ".",
+    title: "Art Portfolio",
     description:
-      "A visual Archive of my artwork, inspired by the experiences of growing up on the internet, and how that had an impact on my relationship with the world around me. Pieces also explore the role tof technology and science within our lives and 21st century humans and the aburdity of the universe",
+      "A visual archive of my artwork, inspired by the experiences of growing up on the internet, and how that had an impact on my relationship with the world around me. Pieces also explore the role tof technology and science within our lives and 21st century humans and the aburdity of the universe",
   },
   artworks: [
     {
       title: "Earth",
       description:
         "Oil on wood panel, 20 x 16 inches, 2026",
-      src: "/images/artwork/earth.jpg",
+      src: "/images/artwork/Earth_2026.jpg",
       alt: "Earth",
     },
     {
