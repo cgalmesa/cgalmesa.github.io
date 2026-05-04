@@ -1,5 +1,5 @@
 import { RetroShell } from "@/components/retro-shell";
-import { contactContent } from "@/content/contactContent";
+import { contactContent } from "@/content/contact";
 
 export default function Contact() {
   return (
