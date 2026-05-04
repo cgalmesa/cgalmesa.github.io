@@ -28,18 +28,22 @@ export const homeContent: HomeContent = {
       "This site is under construction, but the signal is already coming through: research notes, artwork, and contact coordinates for future collaborations.",
   },
   sections: [
-  // sections: [
+    {
+      title: "About",
+      kind: "text",
+      body: "I am an undergraduate student at the University of California, Santa Cruz, where I study exoplanet demographics and evolution. My research focuses on the formation and evolution of planetary systems, with a particular interest in the properties of exoplanets and their host stars. I am passionate about science communication and outreach, and I enjoy sharing my research with others through writing and public speaking.",
+    },
+    {
+      title: "Latest Log",
+      kind: "text",
+      body: "/images/home/iter2log.webp",
+      stamp: "Last updated: Stardate 2026.05",
+    }
   //   {
-  //     title: "Now Observing",
-  //     kind: "list",
-  //     items: [
-  //       "Galaxy evolution across cosmic time",
-  //       "Gravitational lensing and distorted light",
-  //       "Photometric redshifts and spectral fingerprints",
-  //       "Scientific images as portals, not decorations",
+  //     title: "home 3",
   //     ],
   //   },
-  //   {
+  // //   {
   //     title: "Latest Log",
   //     kind: "text",
   //     body: "Iter 2 begins here: small, weird, readable, and very much alive. More field notes and project pages can be wired in as the archive grows.",
