@@ -34,7 +34,7 @@ export const contactContent: ContactContent = {
       {
         label: "CV",
         value: "View CV",
-        href: "public\CGACV (3).pdf",
+        href: "/CGACV (3).pdf",
       },
     ],
   },
