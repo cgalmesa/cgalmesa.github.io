@@ -23,6 +23,15 @@ export default function Home() {
             ) : (
               <>
                 <p>{section.body}</p>
+                {section.src ? (
+                  <div className="section-image">
+                    <img
+                      src={section.src}
+                      alt={section.title}
+                      className="section-media"
+                    />
+                  </div>
+                ) : null}
                 {section.stamp ? <p className="stamp">{section.stamp}</p> : null}
               </>
             )}
