@@ -21,6 +21,24 @@ export const artworkContent = {
       alt: "Earth",
     },
     {
+      title: "you gotta do it",
+      description: "acrylic on paper, 8 x 12 inches, 2025",
+      src: "/images/artwork/you_gotta_do_it.jpg",
+      alt: "you gotta do it",
+    },
+    {
+      title: "Still life with robot",
+      description: "acrylic on paper, 18 x 24 inches, 2025",
+      src: "/images/artwork/still_life2025.jpg",
+      alt: "Still life with robot",
+    },
+    {
+      title: "Study of Cassini's descent",
+      description: "Digital, 2025",
+      src: "/images/artwork/study-of-saturn's-surface.jpg",
+      alt: "Study of Cassini's descent",
+    },
+    {
       title: "untitled",
       description: "acrylic on paper, 18 x 24 inches, 2025",
       src: "/images/artwork/Google_maps_dog.jpg",
@@ -31,6 +49,13 @@ export const artworkContent = {
       description: "gouache on paper, 3 x 4 inches, 2024",
       src: "/images/artwork/sketchbook-pg.jpg",
       alt: "Selected sketchbook pages",
+      
+    },
+    {
+      title: "Artwork for Stargazing event",
+      description: "Digital, 2025",
+      src: "/images/artwork/stargazing-event.jpg",
+      alt: "Artwork for Stargazing event",
     },
   ] satisfies ArtworkItem[],
 } as const;
