@@ -38,7 +38,7 @@ export const researchContent: ResearchContent = {
       title: "Exoplanet Demographics",
       description:
         "Analyzing the distribution and characteristics of planets orbiting stars beyond our solar system.",
-      image: "/images/backgrounds/press-web25_exoplanet_populations.webp",
+      image: "/images/research/press-web25_exoplanet_populations.webp",
       imageAlt:
         "A dense star field used as a placeholder for lensing research.",
       imagePlacement: "left",
@@ -48,7 +48,7 @@ export const researchContent: ResearchContent = {
       title: "Binary Microlensing",
       description:
         "Investigating the gravitational effects of binary star systems on light curves and how they may appear in future Roman Space Telescope data",
-      image: "/images/research/microlensingexoplanet.gif",
+      image: "/images/research/Microlensingexoplanet.gif",
       imageAlt: "An animated gif showing microlensing events.",
       imagePlacement: "right",
     },

@@ -33,7 +33,6 @@ export const homeContent: HomeContent = {
       title: "About",
       kind: "text",
       body: "I am an undergraduate student at the University of California, Santa Cruz, where I study exoplanet demographics and evolution. My research focuses on the formation and evolution of planetary systems, with a particular interest in the properties of exoplanets and their host stars. I am passionate about science communication and outreach, and I enjoy sharing my research with others through art and public speaking.",
-      src: "/images/home/about.webp",
     },
     {
       title: "Latest Log",
