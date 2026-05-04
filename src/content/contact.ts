@@ -34,7 +34,7 @@ export const contactContent: ContactContent = {
       {
         label: "CV",
         value: "View CV",
-        href: "/CVCGA (3).pdf",
+        href: "https://drive.google.com/file/d/1ArEXcBJrJddj4-1twykLigWW21dn4qu8/view?usp=sharing",
       },
     ],
   },
