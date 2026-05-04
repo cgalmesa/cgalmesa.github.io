@@ -26,7 +26,7 @@ export const researchContent: ResearchContent = {
     kicker: "Research Archive",
     title: "Astrophysics notes from the edge of the observable.",
     description:
-      "A simple home for project summaries, paper links, observing runs, and the questions that keep returning after the plots are rendered.",
+      "",
   },
   tableOfContents: {
     title: "Research Threads",
@@ -38,7 +38,7 @@ export const researchContent: ResearchContent = {
       title: "Exoplanet Demographics",
       description:
         "Analyzing the distribution and characteristics of planets orbiting stars beyond our solar system.",
-      image: "/images/backgrounds/space-bg.jpg",
+      image: "/images/backgrounds/press-web25_exoplanet_populations.webp",
       imageAlt:
         "A dense star field used as a placeholder for lensing research.",
       imagePlacement: "left",
@@ -48,8 +48,8 @@ export const researchContent: ResearchContent = {
       title: "Binary Microlensing",
       description:
         "Investigating the gravitational effects of binary star systems on light curves and how they may appear in future Roman Space Telescope data",
-      image: "/images/research/globe.svg",
-      imageAlt: "A simple globe icon used as a placeholder for galaxy morphology.",
+      image: "/images/research/microlensingexoplanet.gif",
+      imageAlt: "An animated gif showing microlensing events.",
       imagePlacement: "right",
     },
   ],
