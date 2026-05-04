@@ -21,24 +21,20 @@ export const contactContent: ContactContent = {
     kicker: "Contact Console",
     title: "Send a signal.",
     description:
-      "For collaborations, research questions, art inquiries, or cosmic correspondence, this page will become the relay station.",
+      "For collaborations, research questions, art inquiries, or cosmic correspondence.",
   },
   coordinates: {
     title: "Coordinates",
     items: [
       {
         label: "Email",
-        value: "hello@example.com",
-        href: "mailto:hello@example.com",
+        value: "carmengalmesa@gmail.com",
+        href: "mailto:carmengalmesa@gmail.com",
       },
       {
         label: "CV",
-        value: "coming soon",
-        href: "#",
-      },
-      {
-        label: "Office hours",
-        value: "by appointment, preferably near a window with stars.",
+        value: "View CV",
+        href: "public\\CVCGA (3).pdf",
       },
     ],
   },
