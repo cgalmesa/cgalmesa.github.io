@@ -19,7 +19,7 @@ export const globalContent = {
     logo: "/images/icons/tab-logo.jpg",
   },
   siteTitle: "Carmen Galmes Altafulla",
-  //siteDescription: "Astrophysics / artwork / field notes / strange light",
+  siteDescription: "",
   backgroundImage: "/images/backgrounds/space-bg.jpg",
   asciiLine: "* . * . * . * . * . * . * . * . *",
   tickerText: ">>> photons arriving daily <<<",
