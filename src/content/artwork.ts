@@ -10,7 +10,7 @@ export const artworkContent = {
     kicker: "Artwork",
     title: "Art Portfolio",
     description:
-      "A visual archive of my artwork, inspired by the experiences of growing up on the internet, and how that had an impact on my relationship with the world around me. Works also explore the role of technology and science within our lives as 21st century humans and the aburdity of the universe",
+      "A visual archive of my artwork, inspired by the experiences of growing up on the internet, and how that had an impact on my relationship with the world around me. Works also explore the role of technology and science within our lives as 21st century humans and the aburdity of the universe.",
   },
   artworks: [
     {
