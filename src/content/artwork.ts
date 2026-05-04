@@ -10,7 +10,7 @@ export const artworkContent = {
     kicker: "Artwork",
     title: "Art Portfolio",
     description:
-      "A visual archive of my artwork, inspired by the experiences of growing up on the internet, and how that had an impact on my relationship with the world around me. Pieces also explore the role tof technology and science within our lives and 21st century humans and the aburdity of the universe",
+      "A visual archive of my artwork, inspired by the experiences of growing up on the internet, and how that had an impact on my relationship with the world around me. Works also explore the role of technology and science within our lives and 21st century humans and the aburdity of the universe",
   },
   artworks: [
     {
@@ -23,7 +23,7 @@ export const artworkContent = {
     {
       title: "you gotta do it",
       description: "acrylic on paper, 8 x 12 inches, 2025",
-      src: "/images/artwork/you_gotta_do_it.jpg",
+      src: "/images/artwork/you_gotta_do_it.png",
       alt: "you gotta do it",
     },
     {
@@ -33,10 +33,10 @@ export const artworkContent = {
       alt: "Still life with robot",
     },
     {
-      title: "Study of Cassini's descent",
-      description: "Digital, 2025",
+      title: "j14071 b Series",
+      description: "Gouache on paper,3 x 6 x 4 inches, 2024",
       src: "/images/artwork/study-of-saturn's-surface.jpg",
-      alt: "Study of Cassini's descent",
+      alt: "j14071 b Series",
     },
     {
       title: "untitled",
