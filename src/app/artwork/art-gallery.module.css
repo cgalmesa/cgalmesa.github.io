@@ -1,14 +1,13 @@
 .galleryPage {
-  background: #0b0b0b;
-  color: #e8e8e8;
+  background: #ffffff;
+  color: #111111;
   min-height: 100vh;
   padding-bottom: 4rem;
 }
-
 .galleryPage :global(.art-grid) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
   padding: 2rem;
   max-width: 1200px;
   margin: 2rem auto;
@@ -16,7 +15,8 @@
 }
 
 .galleryPage :global(.art-card) {
-  background: transparent;
+  background: #ffffff;
+  border: 1px solid #ededed;
   border-radius: 8px;
   overflow: hidden;
   display: flex;
@@ -38,31 +38,30 @@
   width: 100%;
   height: auto;
   display: block;
-  transition: transform 260ms ease, filter 260ms ease;
+  transition: transform 200ms ease, box-shadow 200ms ease;
   transform-origin: center center;
 }
 
 .galleryPage :global(.art-card-button):hover img {
-  transform: scale(1.03);
-  filter: saturate(1.02) contrast(1.02);
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(17, 17, 17, 0.06);
 }
 
 .galleryPage :global(.art-card h2) {
-  margin: 0.25rem 0 0;
+  margin: 0.5rem 0 0 0.75rem;
   font-size: 1rem;
-  color: #ffffff;
+  color: #111111;
 }
-
 .galleryPage :global(.art-card p) {
-  margin: 0.25rem 0 0;
-  color: #cfcfcf;
+  margin: 0.25rem 0 0 0.75rem;
+  color: #666666;
   font-size: 0.9rem;
 }
 
 .galleryPage :global(.art-modal) {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.86);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,12 +71,13 @@
 
 .galleryPage :global(.art-modal-window) {
   position: relative;
-  background: #070707;
+  background: #ffffff;
   padding: 1rem;
   border-radius: 8px;
-  max-width: 1200px;
+  max-width: 1000px;
   width: 100%;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 8px 24px rgba(17, 17, 17, 0.08);
+  border: 1px solid #efefef;
 }
 
 .galleryPage :global(.art-modal-window) img {
@@ -91,8 +91,8 @@
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
-  background: rgba(255, 255, 255, 0.06);
-  color: #fff;
+  background: transparent;
+  color: #666666;
   border: 0;
   padding: 0.4rem 0.6rem;
   border-radius: 4px;
@@ -100,7 +100,7 @@
 }
 
 .galleryPage :global(.art-modal-caption) {
-  color: #ddd;
+  color: #333333;
   padding: 0.75rem 0 0;
 }
 
