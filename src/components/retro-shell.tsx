@@ -19,19 +19,6 @@ export function RetroShell({
 
   return (
     <main className={`site-shell${activePage === "Artwork" ? " artwork-shell" : ""}`} id="top" style={shellStyle}>
-      {/* Welcome badge disabled site-wide */}
-      {false && (
-        <Image
-          className="welcome-badge"
-          src={globalContent.welcomeBadge.src}
-          alt={globalContent.welcomeBadge.alt}
-          width={250}
-          height={70}
-          unoptimized
-          priority
-        />
-      )}
-
       {globalContent.decorativeGifs.map((gif) => (
         <Image
           className={gif.className}
