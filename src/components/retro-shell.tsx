@@ -12,9 +12,10 @@ export function RetroShell({
   activePage: PageName;
   children: React.ReactNode;
 }>) {
-  const shellStyle = {
-    "--site-background-image": `url("${globalContent.backgroundImage}")`,
-  } as CSSProperties;
+  const shellStyle =
+    activePage === "Artwork"
+      ? ({} as CSSProperties)
+      : ({ "--site-background-image": `url("${globalContent.backgroundImage}")` } as CSSProperties);
 
   return (
     <main className="site-shell" id="top" style={shellStyle}>
