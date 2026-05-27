@@ -123,3 +123,9 @@
   white-space: nowrap;
   border: 0;
 }
+
+:global(body.no-space-bg) {
+  background-image: none !important;
+  background-color: #f7f6f4 !important;
+  background-repeat: no-repeat !important;
+}
