@@ -1,6 +1,7 @@
 import { ArtGallery } from "@/components/art-gallery";
 import { RetroShell } from "@/components/retro-shell";
 import { artworkContent } from "@/content/artwork";
+import styles from "./art-gallery.module.css";
 
 export default function Artwork() {
   return (
@@ -11,7 +12,9 @@ export default function Artwork() {
         <p>{artworkContent.intro.description}</p>
       </section>
 
-      <ArtGallery artworks={artworkContent.artworks} />
+      <div className={styles.galleryPage}>
+        <ArtGallery artworks={artworkContent.artworks} />
+      </div>
     </RetroShell>
   );
 }
