@@ -109,7 +109,7 @@
 }
 
 /* Scoped overrides for global layout elements to create a muted portfolio look */
-:global(.artwork-shell) .site-shell {
+:global(.artwork-shell.site-shell) {
   background-image: none !important;
   background-color: #f7f6f4 !important;
 }
