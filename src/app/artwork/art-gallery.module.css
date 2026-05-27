@@ -112,12 +112,14 @@
 :global(.artwork-shell.site-shell) {
   background-image: none !important;
   background-color: #f7f6f4 !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
 :global(.artwork-shell) .page-frame {
-  background: rgba(255, 255, 255, 0.98);
-  border: 1px solid #e6e2dd;
-  box-shadow: 0 10px 30px rgba(17, 17, 17, 0.04);
+  background: rgba(255, 255, 255, 0.98) !important;
+  border: 1px solid #e6e2dd !important;
+  box-shadow: none !important;
   width: min(920px, calc(100vw - 48px));
   margin: 48px auto 0;
 }
