@@ -18,7 +18,7 @@ export function RetroShell({
       : ({ "--site-background-image": `url("${globalContent.backgroundImage}")` } as CSSProperties);
 
   return (
-    <main className="site-shell" id="top" style={shellStyle}>
+    <main className={`site-shell${activePage === "Artwork" ? " artwork-shell" : ""}`} id="top" style={shellStyle}>
       <Image
         className="welcome-badge"
         src={globalContent.welcomeBadge.src}
