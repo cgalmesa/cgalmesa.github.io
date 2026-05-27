@@ -25,10 +25,10 @@ export const globalContent = {
   tickerText: ">>> photons arriving daily <<<",
   footerLeft: "Best viewed with curiosity.",
   footerRight: "Made on Earth.",
-  welcomeBadge: {
-    src: "/images/decorations/welcome.gif",
-    alt: "Welcome",
-  },
+  // welcomeBadge: {
+  //   src: "/images/decorations/welcome.gif",
+  //   alt: "Welcome",
+  // },
   navigation: [
     { label: "Home", page: "Home", href: "/" },
     { label: "Research", page: "Research", href: "/research" },
