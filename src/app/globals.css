@@ -505,3 +505,88 @@ a:focus-visible {
     opacity: 0.7;
   }
 }
+
+/* Art page specific light portfolio overrides */
+.artwork-shell {
+  background-image: none !important;
+  background-color: #f7f6f4 !important;
+}
+
+.artwork-shell .page-frame {
+  background: rgba(255, 255, 255, 0.98) !important;
+  border: 1px solid #e6e2dd !important;
+  box-shadow: none !important;
+}
+
+.artwork-shell .masthead {
+  background: transparent !important;
+  color: #333333 !important;
+  border-bottom: 1px solid #ece7e2 !important;
+}
+
+.artwork-shell .masthead h1 {
+  color: #222222 !important;
+  text-shadow: none !important;
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+.artwork-shell .masthead p {
+  color: #6b6b6b !important;
+}
+
+.artwork-shell .tab-bar {
+  background: transparent !important;
+  border-bottom: 1px solid #efebe7 !important;
+}
+
+.artwork-shell .tab-bar a {
+  color: #333333 !important;
+  background: transparent !important;
+  border-color: #f7f5f3 #e9e6e2 #e9e6e2 #f7f5f3 !important;
+}
+
+.artwork-shell .tab-bar a:hover,
+.artwork-shell .tab-bar a:focus-visible,
+.artwork-shell .tab-bar a.active {
+  color: #111111 !important;
+  background: #f2efe9 !important;
+  border-color: #e0dbd6 !important;
+}
+
+.artwork-shell .ticker {
+  background: #f2efe9 !important;
+  color: #333333 !important;
+  border-bottom: 1px solid #ebe6e0 !important;
+}
+
+.artwork-shell .content-window {
+  background: transparent !important;
+  color: #111111 !important;
+}
+
+.artwork-shell .intro-box,
+.artwork-shell .panel {
+  background: rgba(255, 255, 255, 0.96) !important;
+  border: 1px solid #e9e6e2 !important;
+}
+
+.artwork-shell .intro-box h1,
+.artwork-shell .panel h2 {
+  color: #333333 !important;
+}
+
+.artwork-shell .kicker {
+  background: #efe9e3 !important;
+  color: #333333 !important;
+  border: 1px solid #efe9e3 !important;
+}
+
+.artwork-shell .ascii-line {
+  color: #777777 !important;
+}
+
+.artwork-shell .footer-bar {
+  background: transparent !important;
+  color: #555555 !important;
+  border-top: 1px solid #e9e6e2 !important;
+}
