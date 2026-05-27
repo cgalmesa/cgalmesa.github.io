@@ -1,7 +1,11 @@
 .galleryPage {
-  background: #ffffff;
+  background-color: #f7f6f4;
+  background-image: radial-gradient(ellipse at 50% 10%, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0) 40%), linear-gradient(180deg,#fbfbfb,#f3f3f3 60%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #111111;
   min-height: 100vh;
+  padding-top: 3.5rem;
   padding-bottom: 4rem;
 }
 .galleryPage :global(.art-grid) {
