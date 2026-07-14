@@ -20,9 +20,9 @@ export const artworkContent = {
   },
   sections: [
     {
-      title: "Astronomy art",
-      description:
-        "Works shaped by observation, curiosity, and the symbolic language of the cosmos.",
+      // title: "Astronomy art",
+      // description:
+      //   "Works shaped by observation, curiosity, and the symbolic language of the cosmos.",
       artworks: [
         {
           title: "Artwork for Stargazing event",
