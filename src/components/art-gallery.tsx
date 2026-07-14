@@ -11,8 +11,8 @@ type ArtworkItem = {
 };
 
 type ArtworkSection = {
-  title: string;
-  description: string;
+  // title: string;
+  // description: string;
   artworks: readonly ArtworkItem[];
 };
 
@@ -74,8 +74,8 @@ export function ArtGallery({
       <div className="art-sections" aria-label="Artwork gallery sections">
         <section className="art-section" key={selectedSection.title}>
           <div className="art-section-heading">
-            <h2>{selectedSection.title}</h2>
-            <p>{selectedSection.description}</p>
+            {/* <h2>{selectedSection.title}</h2> */}
+            {/* <p>{selectedSection.description}</p> */}
           </div>
           <div className="art-grid">
             {selectedSection.artworks.map((artwork) => (
