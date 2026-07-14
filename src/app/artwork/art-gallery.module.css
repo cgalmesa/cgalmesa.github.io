@@ -8,6 +8,38 @@
   padding-top: 3.5rem;
   padding-bottom: 4rem;
 }
+.galleryPage :global(.art-tabs) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 1rem;
+}
+
+.galleryPage :global(.art-tab) {
+  border: 1px solid #e2dfda;
+  background: #f9f7f3;
+  color: #333333;
+  padding: 0.6rem 0.95rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.galleryPage :global(.art-tab:hover),
+.galleryPage :global(.art-tab:focus-visible) {
+  background: #efe9e3;
+  border-color: #d7cfc8;
+}
+
+.galleryPage :global(.art-tab.active) {
+  background: #111111;
+  color: #ffffff;
+  border-color: #111111;
+}
+
 .galleryPage :global(.art-sections) {
   display: flex;
   flex-direction: column;

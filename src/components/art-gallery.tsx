@@ -26,6 +26,7 @@ export function ArtGallery({
   sections: readonly ArtworkSection[];
 }>) {
   const [activeArtwork, setActiveArtwork] = useState<GalleryArtworkItem | null>(null);
+  const [activeSection, setActiveSection] = useState(0);
 
   useEffect(() => {
     if (!activeArtwork) {
@@ -47,40 +48,59 @@ export function ArtGallery({
     };
   }, [activeArtwork]);
 
+  const selectedSection = sections[activeSection] ?? sections[0];
+
   return (
     <>
+      <div className="art-tabs" role="tablist" aria-label="Artwork categories">
+        {sections.map((section, index) => {
+          const isActive = index === activeSection;
+
+          return (
+            <button
+              key={section.title}
+              type="button"
+              role="tab"
+              aria-selected={isActive}
+              className={`art-tab${isActive ? " active" : ""}`}
+              onClick={() => setActiveSection(index)}
+            >
+              {section.title}
+            </button>
+          );
+        })}
+      </div>
+
       <div className="art-sections" aria-label="Artwork gallery sections">
-        {sections.map((section) => (
-          <section className="art-section" key={section.title}>
-            <div className="art-section-heading">
-              <h2>{section.title}</h2>
-              <p>{section.description}</p>
-            </div>
-            <div className="art-grid">
-              {section.artworks.map((artwork) => (
-                <article className="art-card" key={`${section.title}-${artwork.src}`}>
-                  <button
-                    className="art-card-button"
-                    type="button"
-                    onClick={() =>
-                      setActiveArtwork({ ...artwork, sectionTitle: section.title })
-                    }
-                  >
-                    <Image
-                      src={artwork.src}
-                      alt={artwork.alt}
-                      width={520}
-                      height={360}
-                    />
-                    <span className="sr-only">Open {artwork.title}</span>
-                  </button>
-                  <h2>{artwork.title}</h2>
-                  <p>{artwork.description}</p>
-                </article>
-              ))}
-            </div>
-          </section>
-        ))}
+        <section className="art-section" key={selectedSection.title}>
+          <div className="art-section-heading">
+            <h2>{selectedSection.title}</h2>
+            <p>{selectedSection.description}</p>
+          </div>
+          <div className="art-grid">
+            {selectedSection.artworks.map((artwork) => (
+              <article className="art-card" key={`${selectedSection.title}-${artwork.src}`}>
+                <button
+                  className="art-card-button"
+                  type="button"
+                  onClick={() =>
+                    setActiveArtwork({ ...artwork, sectionTitle: selectedSection.title })
+                  }
+                >
+                  <Image
+                    src={artwork.src}
+                    alt={artwork.alt}
+                    width={520}
+                    height={360}
+                  />
+                  <span className="sr-only">Open {artwork.title}</span>
+                </button>
+                <h2>{artwork.title}</h2>
+                <p>{artwork.description}</p>
+              </article>
+            ))}
+          </div>
+        </section>
       </div>
 
       {activeArtwork ? (
