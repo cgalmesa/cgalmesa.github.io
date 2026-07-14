@@ -19,18 +19,19 @@ export function RetroShell({
 
   return (
     <main className={`site-shell${activePage === "Artwork" ? " artwork-shell" : ""}`} id="top" style={shellStyle}>
-      {globalContent.decorativeGifs.map((gif) => (
-        <Image
-          className={gif.className}
-          src={gif.src}
-          alt=""
-          width={gif.width}
-          height={gif.height}
-          unoptimized
-          aria-hidden="true"
-          key={`${gif.className}-${gif.src}`}
-        />
-      ))}
+      {activePage !== "Artwork" &&
+        globalContent.decorativeGifs.map((gif) => (
+          <Image
+            className={gif.className}
+            src={gif.src}
+            alt=""
+            width={gif.width}
+            height={gif.height}
+            unoptimized
+            aria-hidden="true"
+            key={`${gif.className}-${gif.src}`}
+          />
+        ))}
 
       <div className="page-frame">
         <header className="masthead">
