@@ -361,7 +361,7 @@ a:focus-visible {
 
 .art-modal-caption h2 {
   margin: 0 0 8px;
-  color: var(--warning-yellow);
+  color: var(--deep-space);
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
 }
