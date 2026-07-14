@@ -8,13 +8,43 @@
   padding-top: 3.5rem;
   padding-bottom: 4rem;
 }
+.galleryPage :global(.art-sections) {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.galleryPage :global(.art-section) {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.galleryPage :global(.art-section-heading) {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.galleryPage :global(.art-section-heading h2) {
+  margin: 0 0 0.35rem;
+  font-size: 1.25rem;
+  color: #111111;
+}
+
+.galleryPage :global(.art-section-heading p) {
+  margin: 0;
+  color: #666666;
+  font-size: 0.95rem;
+}
+
 .galleryPage :global(.art-grid) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-  padding: 2rem;
+  padding: 0 2rem 2rem;
   max-width: 1200px;
-  margin: 2rem auto;
+  margin: 0 auto;
   align-items: start;
 }
 

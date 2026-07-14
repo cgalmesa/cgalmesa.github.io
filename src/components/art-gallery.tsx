@@ -10,14 +10,22 @@ type ArtworkItem = {
   alt: string;
 };
 
-export function ArtGallery({
-  artworks,
-}: Readonly<{
+type ArtworkSection = {
+  title: string;
+  description: string;
   artworks: readonly ArtworkItem[];
+};
+
+type GalleryArtworkItem = ArtworkItem & {
+  sectionTitle: string;
+};
+
+export function ArtGallery({
+  sections,
+}: Readonly<{
+  sections: readonly ArtworkSection[];
 }>) {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  const activeArtwork =
-    activeIndex === null ? null : artworks[activeIndex] ?? null;
+  const [activeArtwork, setActiveArtwork] = useState<GalleryArtworkItem | null>(null);
 
   useEffect(() => {
     if (!activeArtwork) {
@@ -26,7 +34,7 @@ export function ArtGallery({
 
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
-        setActiveIndex(null);
+        setActiveArtwork(null);
       }
     }
 
@@ -41,27 +49,39 @@ export function ArtGallery({
 
   return (
     <>
-      <section className="art-grid" aria-label="Artwork gallery">
-        {artworks.map((artwork, index) => (
-          <article className="art-card" key={artwork.src}>
-            <button
-              className="art-card-button"
-              type="button"
-              onClick={() => setActiveIndex(index)}
-            >
-              <Image
-                src={artwork.src}
-                alt={artwork.alt}
-                width={520}
-                height={360}
-              />
-              <span className="sr-only">Open {artwork.title}</span>
-            </button>
-            <h2>{artwork.title}</h2>
-            <p>{artwork.description}</p>
-          </article>
+      <div className="art-sections" aria-label="Artwork gallery sections">
+        {sections.map((section) => (
+          <section className="art-section" key={section.title}>
+            <div className="art-section-heading">
+              <h2>{section.title}</h2>
+              <p>{section.description}</p>
+            </div>
+            <div className="art-grid">
+              {section.artworks.map((artwork) => (
+                <article className="art-card" key={`${section.title}-${artwork.src}`}>
+                  <button
+                    className="art-card-button"
+                    type="button"
+                    onClick={() =>
+                      setActiveArtwork({ ...artwork, sectionTitle: section.title })
+                    }
+                  >
+                    <Image
+                      src={artwork.src}
+                      alt={artwork.alt}
+                      width={520}
+                      height={360}
+                    />
+                    <span className="sr-only">Open {artwork.title}</span>
+                  </button>
+                  <h2>{artwork.title}</h2>
+                  <p>{artwork.description}</p>
+                </article>
+              ))}
+            </div>
+          </section>
         ))}
-      </section>
+      </div>
 
       {activeArtwork ? (
         <div
@@ -69,13 +89,13 @@ export function ArtGallery({
           role="dialog"
           aria-modal="true"
           aria-labelledby="art-modal-title"
-          onClick={() => setActiveIndex(null)}
+          onClick={() => setActiveArtwork(null)}
         >
           <div className="art-modal-window" onClick={(event) => event.stopPropagation()}>
             <button
               className="art-modal-close"
               type="button"
-              onClick={() => setActiveIndex(null)}
+              onClick={() => setActiveArtwork(null)}
               aria-label="Close artwork"
             >
               X
@@ -90,6 +110,7 @@ export function ArtGallery({
             <div className="art-modal-caption">
               <h2 id="art-modal-title">{activeArtwork.title}</h2>
               <p>{activeArtwork.description}</p>
+              <p>{activeArtwork.sectionTitle}</p>
             </div>
           </div>
         </div>

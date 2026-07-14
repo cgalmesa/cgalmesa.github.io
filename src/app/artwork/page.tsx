@@ -15,7 +15,7 @@ export default function Artwork() {
       </section>
 
       <div className={styles.galleryPage}>
-        <ArtGallery artworks={artworkContent.artworks} />
+        <ArtGallery sections={artworkContent.sections} />
       </div>
     </RetroShell>
   );
