@@ -53,6 +53,7 @@ export function ArtGallery({
       <div className="art-tabs" role="tablist" aria-label="Artwork categories">
         {sections.map((_, index) => {
           const isActive = index === activeSection;
+          const labels = ["Astronomy Art", "Personal Art", "Selected Sketchbook Pages"];
 
           return (
             <button
@@ -63,7 +64,7 @@ export function ArtGallery({
               className={`art-tab${isActive ? " active" : ""}`}
               onClick={() => setActiveSection(index)}
             >
-              {`Category ${index + 1}`}
+              {labels[index] ?? `Category ${index + 1}`}
             </button>
           );
         })}
