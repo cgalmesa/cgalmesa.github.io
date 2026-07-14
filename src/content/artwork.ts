@@ -6,8 +6,6 @@ type ArtworkItem = {
 };
 
 type ArtworkSection = {
-  // title: string;
-  // description: string;
   artworks: readonly ArtworkItem[];
 };
 
@@ -20,9 +18,6 @@ export const artworkContent = {
   },
   sections: [
     {
-      // title: "Astronomy art",
-      // description:
-      //   "Works shaped by observation, curiosity, and the symbolic language of the cosmos.",
       artworks: [
         {
           title: "Artwork for Stargazing event",
@@ -45,9 +40,6 @@ export const artworkContent = {
       ],
     },
     {
-      // title: "Personal art",
-      // description:
-      //   "A more intimate selection of pieces rooted in memory, humor, and everyday life.",
       artworks: [
         {
           title: "Earth",
@@ -82,9 +74,6 @@ export const artworkContent = {
       ],
     },
     {
-      // title: "Selected sketchbook pages",
-      // description:
-      //   "A small window into the rougher, faster drawings that often lead to larger ideas.",
       artworks: [
         {
           title: "Selected sketchbook pages",

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type MouseEvent } from "react";
 
 type ArtworkItem = {
   title: string;
@@ -11,13 +11,11 @@ type ArtworkItem = {
 };
 
 type ArtworkSection = {
-  // title: string;
-  // description: string;
   artworks: readonly ArtworkItem[];
 };
 
 type GalleryArtworkItem = ArtworkItem & {
-  sectionTitle: string;
+  sectionIndex: number;
 };
 
 export function ArtGallery({
@@ -53,39 +51,34 @@ export function ArtGallery({
   return (
     <>
       <div className="art-tabs" role="tablist" aria-label="Artwork categories">
-        {sections.map((section, index) => {
+        {sections.map((_, index) => {
           const isActive = index === activeSection;
 
           return (
             <button
-              key={section.title}
+              key={`section-${index}`}
               type="button"
               role="tab"
               aria-selected={isActive}
               className={`art-tab${isActive ? " active" : ""}`}
               onClick={() => setActiveSection(index)}
             >
-              {section.title}
+              {`Category ${index + 1}`}
             </button>
           );
         })}
       </div>
 
       <div className="art-sections" aria-label="Artwork gallery sections">
-        <section className="art-section" key={selectedSection.title}>
-          <div className="art-section-heading">
-            {/* <h2>{selectedSection.title}</h2> */}
-            {/* <p>{selectedSection.description}</p> */}
-          </div>
+        <section className="art-section" key={`section-${activeSection}`}>
           <div className="art-grid">
             {selectedSection.artworks.map((artwork) => (
-              <article className="art-card" key={`${selectedSection.title}-${artwork.src}`}>
+              <article className="art-card" key={artwork.src}>
                 <button
                   className="art-card-button"
                   type="button"
-                  onClick={() =>
-                    setActiveArtwork({ ...artwork, sectionTitle: selectedSection.title })
-                  }
+                  onClick={() => setActiveArtwork({ ...artwork, sectionIndex: activeSection })}
+                  aria-label="Open artwork"
                 >
                   <Image
                     src={artwork.src}
@@ -93,7 +86,6 @@ export function ArtGallery({
                     width={520}
                     height={360}
                   />
-                  <span className="sr-only">Open {artwork.title}</span>
                 </button>
                 <h2>{artwork.title}</h2>
                 <p>{artwork.description}</p>
@@ -111,7 +103,10 @@ export function ArtGallery({
           aria-labelledby="art-modal-title"
           onClick={() => setActiveArtwork(null)}
         >
-          <div className="art-modal-window" onClick={(event) => event.stopPropagation()}>
+          <div
+            className="art-modal-window"
+            onClick={(event: MouseEvent<HTMLDivElement>) => event.stopPropagation()}
+          >
             <button
               className="art-modal-close"
               type="button"
@@ -130,7 +125,6 @@ export function ArtGallery({
             <div className="art-modal-caption">
               <h2 id="art-modal-title">{activeArtwork.title}</h2>
               <p>{activeArtwork.description}</p>
-              <p>{activeArtwork.sectionTitle}</p>
             </div>
           </div>
         </div>
