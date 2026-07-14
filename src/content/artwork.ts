@@ -6,8 +6,8 @@ type ArtworkItem = {
 };
 
 type ArtworkSection = {
-  title: string;
-  description: string;
+  // title: string;
+  // description: string;
   artworks: readonly ArtworkItem[];
 };
 
@@ -45,9 +45,9 @@ export const artworkContent = {
       ],
     },
     {
-      title: "Personal art",
-      description:
-        "A more intimate selection of pieces rooted in memory, humor, and everyday life.",
+      // title: "Personal art",
+      // description:
+      //   "A more intimate selection of pieces rooted in memory, humor, and everyday life.",
       artworks: [
         {
           title: "Earth",
@@ -82,9 +82,9 @@ export const artworkContent = {
       ],
     },
     {
-      title: "Selected sketchbook pages",
-      description:
-        "A small window into the rougher, faster drawings that often lead to larger ideas.",
+      // title: "Selected sketchbook pages",
+      // description:
+      //   "A small window into the rougher, faster drawings that often lead to larger ideas.",
       artworks: [
         {
           title: "Selected sketchbook pages",
