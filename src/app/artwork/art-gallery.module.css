@@ -11,33 +11,40 @@
 .galleryPage :global(.art-tabs) {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.6rem;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem 1rem;
 }
 
 .galleryPage :global(.art-tab) {
-  border: 1px solid #e2dfda;
-  background: #f9f7f3;
+  display: inline-block;
+  min-width: 118px;
+  padding: 0.7rem 0.9rem;
   color: #333333;
-  padding: 0.6rem 0.95rem;
-  border-radius: 999px;
+  background: transparent;
+  border: 1px solid #f7f5f3 #e9e6e2 #e9e6e2 #f7f5f3;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0;
   cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
   font-size: 0.95rem;
+  font-weight: 600;
   transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
 }
 
 .galleryPage :global(.art-tab:hover),
 .galleryPage :global(.art-tab:focus-visible) {
-  background: #efe9e3;
-  border-color: #d7cfc8;
+  color: #111111;
+  background: #f2efe9;
+  border-color: #e0dbd6;
 }
 
 .galleryPage :global(.art-tab.active) {
-  background: #111111;
-  color: #ffffff;
-  border-color: #111111;
+  color: #111111;
+  background: #f2efe9;
+  border-color: #e0dbd6;
 }
 
 .galleryPage :global(.art-sections) {
@@ -72,12 +79,14 @@
 
 .galleryPage :global(.art-grid) {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
   padding: 0 2rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
   align-items: start;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .galleryPage :global(.art-card) {
@@ -88,6 +97,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  min-width: 0;
 }
 
 .galleryPage :global(.art-card-button) {
